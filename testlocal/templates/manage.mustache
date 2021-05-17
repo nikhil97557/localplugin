@@ -35,7 +35,9 @@
 {{#messages}}
 <tr>
 <td>{{messagetext}}</td>
-<td><button onclick="deletemsg({{id}})" class='btn btn-danger'>DELETE</button></td>
+<td><button onclick="deletemsg({{id}})" class='btn btn-danger'>DELETE</button>
+<input type="button" class="btn btn-info" value="Edit Message" onclick="location.href='{{updateurl}}?mid={{id}}'">
+</td>
 </tr>
 {{/messages}}
 </table>
